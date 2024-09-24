@@ -25,3 +25,5 @@ Route::get('userName{name}', function(string $name){
 
     return "<h1>The name is :". $name . "</h1>";
 })->whereAlpha('name');
+
+Route::view('/user','user');
